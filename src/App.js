@@ -1,15 +1,16 @@
 
 import './App.css';
-import Home from "./pages/Home";
-import {BrowserRouter as Router, Link, Route} from "react-router-dom";
-import {Routes} from "react-router";
-import Sign_Up from "./pages/Sign_Up";
+import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
+import Home from "./pages/Home";
+import TopBar from "./pages/TopBar";
 
 function App() {
   return (
       <div>
-          <Login />
+
+         <Home />
+
       </div>
 
   );

@@ -1,0 +1,47 @@
+.topBar
+{
+    /* Style for the blue glass background of top bar */
+    top: 0;
+    position: sticky;
+    width: auto;
+    height: auto;
+
+    /* Glassy style of the Sign Up frame. */
+    /* The code for background-color: #0039a6; */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: rgba( 0, 57, 166, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+
+}
+
+.topBarLeft *
+{
+    /* Search bar, New Post, Profile, and Setting */
+    margin: 3px 0 3px 8%;
+    padding: 10px;
+    justify-content: left;
+    alignment: left;
+    border-radius: 15px;
+    border: 0;
+    color: white;
+    background-color: black;
+    font-size: 19px;
+}
+
+.topBarLeft > .search
+{
+    width: 50%;
+}
+
+.topBarRight
+{
+    /* Blue Canary brand and Icon. */
+    font: 40px bold;
+    float: right;
+    margin: auto;
+    padding: 0 5% 0 0;
+
+}

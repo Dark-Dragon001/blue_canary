@@ -1,0 +1,75 @@
+.body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUpTitle
+{
+    /* Every voice matters, style. */
+    margin: auto;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size:  30px;
+}
+
+.frameText
+{
+    font: 35px bold;
+    margin: auto;
+}
+
+.signUpFrame
+{
+    margin: 2.9%  auto;
+    padding: 5px;
+    width: 690px;
+    height: 700px;
+    text-align: center;
+    justify-content: center;
+
+    /* Glassy style of the Sign Up frame. */
+    /* The code for background-color: #0039a6; */
+    border-radius: 10%;
+    background: rgba( 0, 57, 166, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+}
+
+.signUpForm > form > input
+{
+    padding: 10px;
+    margin: 4px;
+    width: 48%;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border-style: none;
+    border-radius: 12px;
+}
+
+.signUpForm > form > .signUpDate
+{
+    text-align: center;
+    font-variant-caps: all-petite-caps;
+    font-size: 20px;
+}
+
+.signUpForm > p
+{
+    font-size: 19px;
+}
+
+.signUpForm > form > p
+{
+    margin: auto;
+    padding-top: 13px;
+    font-size: 22px;
+}
+.loginLink
+{
+    font-size: 19px;
+}
+

@@ -1,0 +1,58 @@
+.loginTitle
+{
+    /* Every voice matters, style. */
+    margin: auto;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size:  30px;
+}
+
+.logInFrame
+{
+    margin: 2.9%  auto;
+    padding: 5px;
+    width: 690px;
+    height: 700px;
+    text-align: center;
+    justify-content: center;
+
+
+    /* Glassy style of the Sign Up frame. */
+    /* The code for background-color: #0039a6; */
+    border-radius: 10%;
+    background: rgba( 0, 57, 166, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+}
+
+.logInFrameText
+{
+    font: 35px bold;
+    margin: auto;
+}
+
+.logInFrame > form > input
+{
+    padding: 10px;
+    margin: 4px;
+    width: 48%;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-style: none;
+    border-radius: 12px;
+}
+
+.logInFrame > hr
+{
+    color: white;
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.links
+{
+    font-size: 19px;
+}
