@@ -1,0 +1,76 @@
+.midContainer
+{
+    justify-content: space-evenly;
+}
+.userSection
+{
+    flex: 8;
+    left: 0;
+    margin: 15px 10px 10px 15px;
+    height: 720px;
+    width: 66%;
+    display: block;
+    position: fixed;
+    border-radius: 25px;
+
+    /* Background colour for friends section */
+    background: rgba( 0, 57, 166, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+}
+
+.frindsSection
+{
+    flex: 4;
+    right: 0;
+    margin: 15px 10px 10px 0;
+    height: 720px;
+    width: 30%;
+    display: block;
+    position: fixed;
+    border-radius: 25px;
+
+    /* Background colour for friends section */
+    background: rgba( 0, 57, 166, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+}
+
+.friendsSectionTitle
+{
+    margin-left: 7%;
+    display: block;
+}
+
+.frindsListSection
+{
+    margin: 10px;
+    display: block;
+    color: white;
+    background-color: black;
+
+}
+
+.hrLine
+{
+    margin: 0 10px 0 10px;
+    left: 10px;
+    height: 5px;
+    width: auto;
+    border: none;
+    background-color: white;
+    color: black;
+    display: block;
+
+}
+
+.listSection
+{
+    margin: 15px;
+    height: 595px;
+    display: block;
+    color: white;
+    background-color: black;
+}
