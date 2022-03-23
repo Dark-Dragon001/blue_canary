@@ -1,7 +1,7 @@
 import "./SignUp.css";
 import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 import {Routes} from "react-router";
-import Login from "./Login";
+import Login from "../login/Login";
 
 const SignUp = () =>
 {

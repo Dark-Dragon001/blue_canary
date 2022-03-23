@@ -1,6 +1,6 @@
 import "./Home.css";
 import TopBar from "../../components/topbar/TopBar";
-import Login from "../Login";
+import Login from "../login/Login";
 import DownBar from "../../components/downbar/DownBar";
 import RightBar from "../../components/rightbar/RightBar";
 import LeftBar from "../../components/leftbar/LeftBar";

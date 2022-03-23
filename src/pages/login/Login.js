@@ -2,7 +2,7 @@ import "./Login.css"
 import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 import {Routes} from "react-router";
 import {useEffect, useState} from "react";
-import SignUp from "./SignUp";
+import SignUp from "../signup/SignUp";
 import {render} from "react-dom";
 
 
@@ -34,7 +34,7 @@ const Login = () => {
                             <Link to="/SignUp"> Sign Up </Link>
                         </nav>
                         <Routes>
-                            <Route path="/SignUp" element={SignUp} />
+                            <Route path="/SignUp" element={<SignUp />} />
                         </Routes>
                     </Router>
                 </div>

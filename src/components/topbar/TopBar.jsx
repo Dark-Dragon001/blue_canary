@@ -1,5 +1,5 @@
 import "./TopBar.css";
-import Login from "../../pages/Login";
+import Login from "../../pages/login/Login";
 import {Search} from "@material-ui/icons";
 
 const TopBar = () => {
