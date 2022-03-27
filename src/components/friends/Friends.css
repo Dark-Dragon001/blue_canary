@@ -1,0 +1,42 @@
+.friendsList
+{
+    list-style: none;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    justify-content: left;
+    justify-items: left;
+    align-items: flex-start;
+    height: 10%;
+    margin-top: 10px;
+
+}
+
+.friendsBar
+{
+    display: inline-flex;
+    margin-top:auto;
+    justify-items: left;
+    justify-content: left;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: relative;
+}
+
+.profileImage
+{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: 2;
+    margin: 5px 15px 5px -20px;
+
+}
+
+.friendsName
+{
+    font-size: 20px;
+    flex: 4;
+    margin:auto;
+}
