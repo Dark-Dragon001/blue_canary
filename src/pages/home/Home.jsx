@@ -2,9 +2,7 @@ import "./Home.css";
 import TopBar from "../../components/topbar/TopBar";
 import Login from "../login/Login";
 import DownBar from "../../components/downbar/DownBar";
-import RightBar from "../../components/rightbar/RightBar";
-import LeftBar from "../../components/leftbar/LeftBar";
-import MidSection from "../../components/MidSection";
+import MidSection from "../../components/midsection/MidSection";
 
 
 const Home = () => {
@@ -14,8 +12,6 @@ const Home = () => {
               <TopBar />
               <MidSection />
               <DownBar />
-
-
 
 
           </div>

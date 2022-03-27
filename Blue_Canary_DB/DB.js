@@ -1,17 +1,18 @@
-const {createPool} = require("mysql");
+const express = require("express");
+const cors = require("cors");
+const app = express();
 
-const pool = createPool(
-    {
-        host: "localhost",
-        port: "3306",
-        user: "root",
-        password: "database"
-    });
+/*
+app.use(cors());
 
-pool.query(
-    `use Blue_Canary;
-    select * 
-    from user`,
-    (err, res) => {
-        return console.log(res);
+
+app.use("/login", (req, res) => {
+        res.send({
+                token: "tokenison"
+        });
 });
+
+app.listen(3306, () => console.log("API is running on jdbc:mysql://localhost:3306/Login"));
+
+
+ */
