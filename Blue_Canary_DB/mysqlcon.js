@@ -1,5 +1,5 @@
 const express = require("express");
-const mysql = require("mysql");
+const mysql = require("mysql2");
 const app = express();
 
 const db = mysql.createConnection(
@@ -11,23 +11,35 @@ const db = mysql.createConnection(
     }
 );
 
-db.connect();
-db.query("SELECT * FROM USER", (err, result) =>
+
+db.connect(function (err)
 {
-    if (err) throw err
-    console.log(result);
+    if (err)
+    {
+        console.log("error encountered: " + err.stack);
+        return;
+    }
+    console.log("connection as id " + db.threadId)
 });
+
+db.query("select * from User;", (err, result) =>
+    {
+    if (err) throw err
+        console.log(result);
+    }
+);
 
 /*
 db.connect(function (err)
 {
     if (err) throw err;
     console.log("Connected!");
-    db.query("select * from User;", function (err, result)
-    {
+    db.query("select * from User;",
+        function (err, result)
+        {
         if (err) throw err;
-        console.log("Result " + result);
-    })
+        console.log(result);
+         })
 });
 
 */
