@@ -10,7 +10,7 @@ import {Routes} from "react-router";
 function App() {
   return (
       <>
-          <Home />
+          <Login />
       </>
 
 

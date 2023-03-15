@@ -11,18 +11,18 @@ import {useEffect, useState} from "react";
 
 
 
-
-
 const Login = () => {
+
+    // Login and password variables.
     const [userName, setUserName] = useState("");
     const [password, setPassword] = useState("");
     //const [token, setToken] = useState();
 
     async function login()
     {
-        console.warn(userName, password);
-        const item = {userName, password};
-        const result = await fetch("")
+       // console.warn(userName, password);
+       // const item = {userName, password};
+       // const result = await fetch("")
     }
    /*
     if(!token)
@@ -30,6 +30,10 @@ const Login = () => {
         return <Login setToken={setToken } />
     }
 */
+
+    console.log("Username: " + userName);
+    console.log("Password: " + password);
+
     return(
         <>
         <Router>
@@ -44,12 +48,14 @@ const Login = () => {
                 <form>
                     <input type="email"
                            onClick={(e) => setUserName(e.target.value)}
+                           onChange={(e) => {setUserName(e.target.value)}}
                            name="username"
                            placeholder=" Username "
                            autoComplete="off"
                            required/> <br/>
                     <input type="password"
                            onClick={(e) => setPassword(e.target.value)}
+                           onChange={(e) => {setPassword(e.target.value)}}
                            name=" password "
                            placeholder=" Password "
                            required/> <br/>
