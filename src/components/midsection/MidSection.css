@@ -2,16 +2,18 @@
 {
     justify-content: space-evenly;
 }
+
 .userSection
 {
     flex: 8;
     left: 0;
     margin: 15px 10px 10px 15px;
-    height: 720px;
+    height: 77vh;
     width: 66%;
     display: block;
     position: fixed;
     border-radius: 25px;
+    border:  white solid 3px;
 
     /* Background colour for friends section */
     background: rgba( 0, 57, 166, 0.4 );
@@ -20,16 +22,31 @@
     -webkit-backdrop-filter: blur( 8.5px );
 }
 
+.userActivity
+{
+    /* User activity section design. */
+    display: flex;
+    flex-shrink: 30;
+    margin: 10px 10px 10px 10px;
+    height: 75Vh;
+    width: 65vw;
+    background-color: black;
+    overflow: auto;
+}
+
+/* ===========================  Friends component design.   ====================================== */
 .friendsSection
 {
+    /* Friends section main container.*/
     flex: 4;
     right: 0;
     margin: 15px 10px 10px 0;
-    height: 720px;
+    height: 77vh;
     width: 30%;
     display: block;
     position: fixed;
     border-radius: 25px;
+    border:  white solid 3px;
 
     /* Background colour for friends section */
     background: rgba( 0, 57, 166, 0.4 );
@@ -40,22 +57,14 @@
 
 .friendsSectionTitle
 {
+    /* Friends container title design.*/
     margin-left: 7%;
     display: block;
 }
 
-.friendsListSection
-{
-    margin: 10px;
-    display: block;
-    color: white;
-    background-color: black;
-    position: sticky;
-
-}
-
 .hrLine
 {
+    /* Line above friends card property. */
     margin: 0 10px 0 10px;
     left: 10px;
     height: 5px;
@@ -64,19 +73,33 @@
     background-color: white;
     color: black;
     display: block;
+}
 
+.friendsListSection
+{
+    /* Friends cards container. */
+    margin: 10px;
+    display: block;
+    color: white;
+    background-color: black;
+    position: sticky;
 }
 
 .listSection
 {
-    margin: 15px;
-    height: 595px;
-    display: block;
+    /* Friends Card container properties */
+    height: 65vh;
+    min-height: 60vh;
+    max-width: 30vmax;
+    width: 29vw;
     color: white;
-    background-color: black;
-    position: page ;
-    justify-content: left;
-    justify-items: left;
-    align-items: flex-start;
-
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    scrollbar-color: white gainsboro ;
+    scrollbar-width: auto;
+    margin: auto;
 }
+
+
+

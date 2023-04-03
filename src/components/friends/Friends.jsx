@@ -1,18 +1,28 @@
 import "./Friends.css";
+import {FriendsData} from "./FriendsData";
+
 
 
 const Friends = () => {
   return(
       <>
           <div className="friendsContainer">
-              <ul className="friendsList">
-                  <li className="friendsBar">
-                      <img className="profileImage" src="assets/profilePic.webp" alt="Friend_profile_picture"/>
-                      <h2 className="friendsName">
-                          User007
-                      </h2>
-                  </li>
-              </ul>
+
+
+              {FriendsData.map((friend, id)=>{
+                  return(
+                      <div className="friendsList">
+                          <span>
+                              <img src={friend.image} alt="" className="friendsImage"/>
+                          </span>
+                          <span className="friendsName">
+                                  {friend.name}
+                          </span>
+                      </div>
+                  )}
+
+              )}
+
           </div>
 
       </>
