@@ -11,7 +11,7 @@ const Friends = () => {
 
               {FriendsData.map((friend, id)=>{
                   return(
-                      <div className="friendsList">
+                      <div className="friendsList" onClick={()=>{console.log("List number " + friend.name.valueOf() + " clicked")}}>
                           <span>
                               <img src={friend.image} alt="" className="friendsImage"/>
                           </span>
