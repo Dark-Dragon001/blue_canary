@@ -1,11 +1,10 @@
 import "./TopBar.css";
-import Login from "../../pages/login/Login";
+import Login from "../../pages/Login";
 import {Search} from "@material-ui/icons";
 
 const TopBar = () => {
   return(
-      <>
-          <div className="topBar">
+      <div className="topBarBody">
               <div className="topBarLeft">
                   <div className="searchBar">
                       <input className="search" type="search" placeholder="Search"/>
@@ -18,13 +17,15 @@ const TopBar = () => {
                   </span>
                 </div>
               <div className="topBarRight">
+                  <div>
                       <p> Blue Canary</p>
+                  </div>
+                  <div>
                       <img src="assets/canary_icon.jpeg" alt="canary_icon"/>
+                  </div>
 
               </div>
-
-          </div>
-      </>
+      </div>
   );
 }
 

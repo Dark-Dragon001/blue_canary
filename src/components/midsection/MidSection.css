@@ -1,5 +1,9 @@
 .midContainer
 {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: auto;
     justify-content: space-evenly;
 }
 
