@@ -9,6 +9,7 @@ function rootLayout() {
                 <Link to="/signUp"> Sign Up </Link>
                 <Link to="/login"> Log in  </Link>
                 <Link to="/home">Home</Link>
+                    <Link to="/home/channels">Channels</Link>
             </nav>
         </div>,
             <main> <Outlet/> </main>

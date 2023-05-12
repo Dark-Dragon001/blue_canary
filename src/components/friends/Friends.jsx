@@ -2,13 +2,10 @@ import "./Friends.css";
 import {FriendsData} from "./FriendsData";
 
 
-
 const Friends = () => {
   return(
       <>
           <div className="friendsContainer">
-
-
               {FriendsData.map((friend, id)=>{
                   return(
                       <div className="friendsList" onClick={()=>{console.log("List number " + friend.name.valueOf() + " clicked")}}>
@@ -20,9 +17,7 @@ const Friends = () => {
                           </span>
                       </div>
                   )}
-
               )}
-
           </div>
 
       </>

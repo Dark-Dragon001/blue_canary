@@ -3,7 +3,6 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/Backend/Blue_Canary_DB/Blue_Canary_DB.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/Backend/dbCon.js" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/Backend/login.js" dialect="GenericSQL" />
     <file url="PROJECT" dialect="MySQL" />
   </component>
 </project>

@@ -6,9 +6,7 @@ const MidSection = () => {
       <>
           <div className="midContainer">
               <div className="userSection">
-                  <div className="userActivity">
-                        <UserActivity />
-                  </div>
+                  <UserActivity />
               </div>
               <div className="friendsSection">
                   <div className="friendsSectionTitle">
@@ -23,7 +21,6 @@ const MidSection = () => {
                       </div>
                   </div>
               </div>
-
           </div>
       </>
   );

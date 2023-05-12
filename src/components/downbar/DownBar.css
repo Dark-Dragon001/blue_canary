@@ -3,7 +3,7 @@
         /* Downbar component general style. */
     display: flex;
     position: fixed;
-    top: auto;
+    /*top: auto;*/
     left: 0;
     right: 0;
     bottom: 0;
@@ -11,7 +11,7 @@
     align-content: stretch;
     align-items: stretch;
     width: 100vw;
-    height: 7%;
+    height: 7vh;
     margin: auto;
     gap: 10px;
 }

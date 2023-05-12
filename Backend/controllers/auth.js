@@ -42,7 +42,7 @@ export const register = (req, res) => {
     db.query(insertQuery, [values], (err, data) => {
         if (err)
             return res.status(500).json(err);
-        return res.status(201).json({ message: "User has been created successfully." });
+        return res.status(201).json("User has been created successfully.");
      });
 };
 
@@ -57,14 +57,14 @@ export const login = (req, res) =>{
         if (err)
             return res.status(500).json(err);
         if (data.length === 0)
-            return res.status(404).json({ message: "Invalid username or password!" });
+            return res.status(404).json("Invalid username or password!");
 
             // Query for password match.
         const checkPassword = bcrypt.compareSync(req.body.password, data[0].password);
 
             // Check if the password for the specific username matches.
         if (!checkPassword)
-            return res.status(400).json({ message: "Invalid username or password!" });
+            return res.status(400).json("Invalid username or password!");
 
         // JWT tokens.
             // Tokens/Cookies hold the user credential temporary for usage ease.

@@ -7,6 +7,7 @@ import {createRoutesFromElements, Route, RouterProvider} from "react-router";
 import {createBrowserRouter} from "react-router-dom";
 import RootLayout from "./components/rootLayout";
 import ForgetPassword from "./pages/ForgetPassword";
+import Channels from "./pages/Channels";
 
     //
 const router = createBrowserRouter(
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
             <Route path='/signup' element={<SignUp/>} />
             <Route path='/recoverpassword' element={<ForgetPassword/>} />
             <Route path='/home' element={<Home/>} />
+                <Route path='/home/channels' element={<Channels/>} />
         </Route>
     )
 );

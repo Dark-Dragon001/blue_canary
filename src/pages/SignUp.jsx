@@ -37,7 +37,7 @@ const SignUp = () =>
     };
 
     console.log(formInputs);
-    console.log(error);
+
 
 
     return(

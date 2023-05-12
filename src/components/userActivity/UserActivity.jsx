@@ -1,87 +1,180 @@
 import "./UserActivity.css";
+import "../profilePic.webp";
+import {AuthContext} from "../../context/authContext";
+import {useContext, useState} from "react";
+import {useNavigate} from "react-router-dom";
+
+
 
 const UserActivity = () => {
+
+    const [error, setError] = useState(null);
+
+
+
+        /* Current active username to send it as the username in the home page. */
+    const { currentUser, logout } = useContext(AuthContext);
+
+
+        // To navigate to login page.
+    const navigate = useNavigate();
+
+        //onClick handler for the logout button.
+    const logoutClickHandler = async (e) => {
+        e.preventDefault();
+
+        try {
+            await logout();
+            navigate("/")
+            alert("Successfully logged out!");
+        }
+        catch (err){
+            setError(err.response.data);
+            alert(error);
+        }
+    };
+
+
+
     return(
-        <div>
-            This is the user activity secion.
-            Gray is a neutral color that can have a wide range of meanings. It often symbolizes compromise, control, and practicality. It can stabilize, calm, and relax those who look at it.
+        <div className="userActivityCont">
+            <div className="userInfoCont">
+                <span id="userInfoSpan1">
 
-            Like all colors, gray has both positive and negative meanings. Some positive meanings include reliability, maturity, and intellect. However, it could also represent pessimism, sadness, or indecisiveness. The meaning can vary based on the context in which the color is used.
-            Can You Make Black and White Paint?
+                    <img
+                        // src={profilePic}
+                        src="https://t4.ftcdn.net/jpg/01/15/54/97/360_F_115549789_UxeJewo8VMYF9J1qzNdcZ4NvmuWECTxW.jpg"
+                        alt=""
+                    />
+                    {currentUser?.username}
+                </span>
+                <span id="userInfoSpan2"
+                      onClick={logoutClickHandler}>
+                    Logout
+                </span>
+            </div>
+            <div className="postsSectionCont">
+                <div className="postDetails">
+                    <h3>This is the posts section.</h3>
+                    <span>
+                        Picture post
+                    </span>
+                    <span>Description of the picture.</span>
+                    <span>Comments </span>
+                </div>
+                <div className="postButtons">Like, Dislike, Share</div>
+            </div>
 
-            If you run out of black or white paint, you might be out of luck. Since these two colors don’t appear on the color wheel, they’re some of the most difficult hues to create. In fact, there’s no way to make white paint using other colors. White is the absence of color and wavelengths, so mixing any colors together will have at least one wavelength in the mix, making it not pure white. There are some ways to create white paint with other household materials, but it’s easiest to buy new paint instead.
-            Gray is a neutral color that can have a wide range of meanings. It often symbolizes compromise, control, and practicality. It can stabilize, calm, and relax those who look at it.
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
 
-            Like all colors, gray has both positive and negative meanings. Some positive meanings include reliability, maturity, and intellect. However, it could also represent pessimism, sadness, or indecisiveness. The meaning can vary based on the context in which the color is used.
-            Can You Make Black and White Paint?
+            fffsafasf<br/>
 
-            If you run out of black or white paint, you might be out of luck. Since these two colors don’t appear on the color wheel, they’re some of the most difficult hues to create. In fact, there’s no way to make white paint using other colors. White is the absence of color and wavelengths, so mixing any colors together will have at least one wavelength in the mix, making it not pure white. There are some ways to create white paint with other household materials, but it’s easiest to buy new paint instead.
-            Gray is a neutral color that can have a wide range of meanings. It often symbolizes compromise, control, and practicality. It can stabilize, calm, and relax those who look at it.
 
-            Like all colors, gray has both positive and negative meanings. Some positive meanings include reliability, maturity, and intellect. However, it could also represent pessimism, sadness, or indecisiveness. The meaning can vary based on the context in which the color is used.
-            Can You Make Black and White Paint?
+            fffsafasf<br/>            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
 
-            If you run out of black or white paint, you might be out of luck. Since these two colors don’t appear on the color wheel, they’re some of the most difficult hues to create. In fact, there’s no way to make white paint using other colors. White is the absence of color and wavelengths, so mixing any colors together will have at least one wavelength in the mix, making it not pure white. There are some ways to create white paint with other household materials, but it’s easiest to buy new paint instead.
-            Gray is a neutral color that can have a wide range of meanings. It often symbolizes compromise, control, and practicality. It can stabilize, calm, and relax those who look at it.
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
 
-            Like all colors, gray has both positive and negative meanings. Some positive meanings include reliability, maturity, and intellect. However, it could also represent pessimism, sadness, or indecisiveness. The meaning can vary based on the context in which the color is used.
-            Can You Make Black and White Paint?
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
 
-            If you run out of black or white paint, you might be out of luck. Since these two colors don’t appear on the color wheel, they’re some of the most difficult hues to create. In fact, there’s no way to make white paint using other colors. White is the absence of color and wavelengths, so mixing any colors together will have at least one wavelength in the mix, making it not pure white. There are some ways to create white paint with other household materials, but it’s easiest to buy new paint instead.
-            Gray is a neutral color that can have a wide range of meanings. It often symbolizes compromise, control, and practicality. It can stabilize, calm, and relax those who look at it.
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
+            fffsafasf<br/>
 
-            Like all colors, gray has both positive and negative meanings. Some positive meanings include reliability, maturity, and intellect. However, it could also represent pessimism, sadness, or indecisiveness. The meaning can vary based on the context in which the color is used.
-            Can You Make Black and White Paint?
+            fffsafasf<br/>
 
-            If you run out of black or white paint, you might be out of luck. Since these two colors don’t appear on the color wheel, they’re some of the most difficult hues to create. In fact, there’s no way to make white paint using other colors. White is the absence of color and wavelengths, so mixing any colors together will have at least one wavelength in the mix, making it not pure white. There are some ways to create white paint with other household materials, but it’s easiest to buy new paint instead.
-            Gray is a neutral color that can have a wide range of meanings. It often symbolizes compromise, control, and practicality. It can stabilize, calm, and relax those who look at it.
 
-            Like all colors, gray has both positive and negative meanings. Some positive meanings include reliability, maturity, and intellect. However, it could also represent pessimism, sadness, or indecisiveness. The meaning can vary based on the context in which the color is used.
-            Can You Make Black and White Paint?
 
-            If you run out of black or white paint, you might be out of luck. Since these two colors don’t appear on the color wheel, they’re some of the most difficult hues to create. In fact, there’s no way to make white paint using other colors. White is the absence of color and wavelengths, so mixing any colors together will have at least one wavelength in the mix, making it not pure white. There are some ways to create white paint with other household materials, but it’s easiest to buy new paint instead.
-                Gray is a neutral color that can have a wide range of meanings. It often symbolizes compromise, control, and practicality. It can stabilize, calm, and relax those who look at it.
-
-                Like all colors, gray has both positive and negative meanings. Some positive meanings include reliability, maturity, and intellect. However, it could also represent pessimism, sadness, or indecisiveness. The meaning can vary based on the context in which the color is used.
-                Can You Make Black and White Paint?
-
-                If you run out of black or white paint, you might be out of luck. Since these two colors don’t appear on the color wheel, they’re some of the most difficult hues to create. In fact, there’s no way to make white paint using other colors. White is the absence of color and wavelengths, so mixing any colors together will have at least one wavelength in the mix, making it not pure white. There are some ways to create white paint with other household materials, but it’s easiest to buy new paint instead.
-                Gray is a neutral color that can have a wide range of meanings. It often symbolizes compromise, control, and practicality. It can stabilize, calm, and relax those who look at it.
-
-                Like all colors, gray has both positive and negative meanings. Some positive meanings include reliability, maturity, and intellect. However, it could also represent pessimism, sadness, or indecisiveness. The meaning can vary based on the context in which the color is used.
-                Can You Make Black and White Paint?
-
-                If you run out of black or white paint, you might be out of luck. Since these two colors don’t appear on the color wheel, they’re some of the most difficult hues to create. In fact, there’s no way to make white paint using other colors. White is the absence of color and wavelengths, so mixing any colors together will have at least one wavelength in the mix, making it not pure white. There are some ways to create white paint with other household materials, but it’s easiest to buy new paint instead.
-                Gray is a neutral color that can have a wide range of meanings. It often symbolizes compromise, control, and practicality. It can stabilize, calm, and relax those who look at it.
-
-                Like all colors, gray has both positive and negative meanings. Some positive meanings include reliability, maturity, and intellect. However, it could also represent pessimism, sadness, or indecisiveness. The meaning can vary based on the context in which the color is used.
-                Can You Make Black and White Paint?
-
-                If you run out of black or white paint, you might be out of luck. Since these two colors don’t appear on the color wheel, they’re some of the most difficult hues to create. In fact, there’s no way to make white paint using other colors. White is the absence of color and wavelengths, so mixing any colors together will have at least one wavelength in the mix, making it not pure white. There are some ways to create white paint with other household materials, but it’s easiest to buy new paint instead.
-                Gray is a neutral color that can have a wide range of meanings. It often symbolizes compromise, control, and practicality. It can stabilize, calm, and relax those who look at it.
-
-                Like all colors, gray has both positive and negative meanings. Some positive meanings include reliability, maturity, and intellect. However, it could also represent pessimism, sadness, or indecisiveness. The meaning can vary based on the context in which the color is used.
-                Can You Make Black and White Paint?
-
-                If you run out of black or white paint, you might be out of luck. Since these two colors don’t appear on the color wheel, they’re some of the most difficult hues to create. In fact, there’s no way to make white paint using other colors. White is the absence of color and wavelengths, so mixing any colors together will have at least one wavelength in the mix, making it not pure white. There are some ways to create white paint with other household materials, but it’s easiest to buy new paint instead.
-                Gray is a neutral color that can have a wide range of meanings. It often symbolizes compromise, control, and practicality. It can stabilize, calm, and relax those who look at it.
-
-                Like all colors, gray has both positive and negative meanings. Some positive meanings include reliability, maturity, and intellect. However, it could also represent pessimism, sadness, or indecisiveness. The meaning can vary based on the context in which the color is used.
-                Can You Make Black and White Paint?
-
-                If you run out of black or white paint, you might be out of luck. Since these two colors don’t appear on the color wheel, they’re some of the most difficult hues to create. In fact, there’s no way to make white paint using other colors. White is the absence of color and wavelengths, so mixing any colors together will have at least one wavelength in the mix, making it not pure white. There are some ways to create white paint with other household materials, but it’s easiest to buy new paint instead.
-                Gray is a neutral color that can have a wide range of meanings. It often symbolizes compromise, control, and practicality. It can stabilize, calm, and relax those who look at it.
-
-                Like all colors, gray has both positive and negative meanings. Some positive meanings include reliability, maturity, and intellect. However, it could also represent pessimism, sadness, or indecisiveness. The meaning can vary based on the context in which the color is used.
-                Can You Make Black and White Paint?
-
-                If you run out of black or white paint, you might be out of luck. Since these two colors don’t appear on the color wheel, they’re some of the most difficult hues to create. In fact, there’s no way to make white paint using other colors. White is the absence of color and wavelengths, so mixing any colors together will have at least one wavelength in the mix, making it not pure white. There are some ways to create white paint with other household materials, but it’s easiest to buy new paint instead.
-                Gray is a neutral color that can have a wide range of meanings. It often symbolizes compromise, control, and practicality. It can stabilize, calm, and relax those who look at it.
-
-                Like all colors, gray has both positive and negative meanings. Some positive meanings include reliability, maturity, and intellect. However, it could also represent pessimism, sadness, or indecisiveness. The meaning can vary based on the context in which the color is used.
-                Can You Make Black and White Paint?
-
-                If you run out of black or white paint, you might be out of luck. Since these two colors don’t appear on the color wheel, they’re some of the most difficult hues to create. In fact, there’s no way to make white paint using other colors. White is the absence of color and wavelengths, so mixing any colors together will have at least one wavelength in the mix, making it not pure white. There are some ways to create white paint with other household materials, but it’s easiest to buy new paint instead.
         </div>
     )
 

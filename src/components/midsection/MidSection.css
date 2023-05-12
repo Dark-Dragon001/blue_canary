@@ -1,21 +1,26 @@
 .midContainer
 {
     display: flex;
+    align-content: center;
+    align-items: center;
     position: fixed;
-    width: 100vw;
+    top: 18vh;
+    right: 10px;
+    left: 10px;
+    width: auto;
     height: auto;
-    justify-content: space-evenly;
+    margin: auto;
 }
+
 
 .userSection
 {
-    flex: 8;
-    left: 0;
-    margin: 15px 10px 10px 15px;
-    height: 77vh;
-    width: 66%;
-    display: block;
-    position: fixed;
+        /* User activity container, midsection left part. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 71vh;
+    width: 68%;
     border-radius: 25px;
     border:  white solid 3px;
 
@@ -26,29 +31,30 @@
     -webkit-backdrop-filter: blur( 8.5px );
 }
 
-.userActivity
-{
-    /* User activity section design. */
-    display: flex;
-    flex-shrink: 30;
-    margin: 10px 10px 10px 10px;
-    height: 75Vh;
-    width: 65vw;
-    background-color: black;
-    overflow: auto;
-}
+
+/*.userActivity*/
+/*{*/
+/*        !* User activity section design. Midsection, left part upper layer. *!*/
+/*    !*display: flex;*!*/
+/*    !*!*justify-content: flex-start;*!*!*/
+/*    !*!*align-items: center;*!*!*/
+/*    !*height: 68Vh;*!*/
+/*    background-color: black;*/
+/*    !*overflow: auto;*!*/
+/*    !*margin: 10px;*!*/
+/*}*/
+
 
 /* ===========================  Friends component design.   ====================================== */
 .friendsSection
 {
-    /* Friends section main container.*/
-    flex: 4;
-    right: 0;
-    margin: 15px 10px 10px 0;
-    height: 77vh;
-    width: 30%;
+        /* Friends section main container.*/
     display: block;
     position: fixed;
+    right: 10px;
+    margin: auto;
+    height: 71vh;
+    width: 30%;
     border-radius: 25px;
     border:  white solid 3px;
 
@@ -59,16 +65,20 @@
     -webkit-backdrop-filter: blur( 8.5px );
 }
 
+
 .friendsSectionTitle
 {
-    /* Friends container title design.*/
+        /* Friends container title design.*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     margin-left: 7%;
-    display: block;
 }
+
 
 .hrLine
 {
-    /* Line above friends card property. */
+        /* Line above friends card property. */
     margin: 0 10px 0 10px;
     left: 10px;
     height: 5px;
@@ -79,31 +89,91 @@
     display: block;
 }
 
+
 .friendsListSection
 {
-    /* Friends cards container. */
+        /* Friends cards container. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
-    display: block;
     color: white;
+    width: auto;
     background-color: black;
-    position: sticky;
 }
+
 
 .listSection
 {
-    /* Friends Card container properties */
-    height: 65vh;
-    min-height: 60vh;
-    max-width: 30vmax;
-    width: 29vw;
-    color: white;
+        /* Friends Card container properties */
     display: flex;
     justify-content: center;
+    height: 58vh;
+    width: 28vw;
+    margin: auto;
+    color: white;
     overflow: auto;
     scrollbar-color: white gainsboro ;
     scrollbar-width: auto;
-    margin: auto;
 }
 
+
+@media screen and (max-width: 1074px) {
+    /* Responsiveness for login and sign up frame. */
+    .midContainer
+    {
+        bottom: 4.5vh;
+        /*height: 42vh;*/
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Responsiveness for login and sign up frame. */
+    .midContainer{
+        /*height: 20vh;*/
+        bottom: 2vh;
+        display: flex;
+    }
+    .userSection{
+        height: 64vh;
+        width: 66%;
+    }
+    .friendsSection{
+        height: 64vh;
+    }
+    .userActivity{
+        height: 61vh;
+    }
+    .friendsListSection,
+    .listSection{
+        height: 52vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Responsiveness for login and sign up frame. */
+    .midContainer{
+        /*height: 20vh;*/
+        bottom: 1vh;
+        display: flex;
+    }
+    .userSection
+    {
+        height: 59vh;
+        width: 63%;
+    }
+    .friendsSection{
+        height: 59vh;
+
+    }
+    .userActivity{
+        height: 57vh;
+    }
+    .friendsListSection,
+    .listSection{
+        height: 47vh;
+    }
+}
 
 

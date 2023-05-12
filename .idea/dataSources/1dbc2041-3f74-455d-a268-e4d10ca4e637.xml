@@ -1738,7 +1738,7 @@
       <UnderlyingIndexName>LIKE_ID_UNIQUE</UnderlyingIndexName>
     </key>
     <column id="612" parent="525" name="user_id">
-      <AutoIncrement>110</AutoIncrement>
+      <AutoIncrement>122</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1773,7 +1773,7 @@
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="619" parent="525" name="profile_pic">
+    <column id="619" parent="525" name="profilePic">
       <DasType>blob|0s</DasType>
       <Position>8</Position>
     </column>

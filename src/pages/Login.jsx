@@ -37,7 +37,7 @@ const Login = () => {
 
          try {
              await login(loginInput);
-             //navigate("/home")
+             navigate("/home")
          }
          catch (err){
              setError(err.response.data);
