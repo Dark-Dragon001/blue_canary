@@ -1637,14 +1637,13 @@
       <UnderlyingIndexName>LIKE_ID_UNIQUE</UnderlyingIndexName>
     </key>
     <column id="590" parent="523" name="POST_ID">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>3</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="591" parent="523" name="POST_DATE_AND_TIME">
-      <DasType>datetime|0s</DasType>
-      <NotNull>1</NotNull>
+      <DasType>timestamp|0s</DasType>
       <Position>2</Position>
     </column>
     <column id="592" parent="523" name="POST_DESC">
@@ -1774,7 +1773,7 @@
       <Position>7</Position>
     </column>
     <column id="619" parent="525" name="profilePic">
-      <DasType>blob|0s</DasType>
+      <DasType>varchar(500)|0s</DasType>
       <Position>8</Position>
     </column>
     <index id="620" parent="525" name="PRIMARY">

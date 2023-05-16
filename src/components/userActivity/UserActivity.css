@@ -1,10 +1,9 @@
 .userActivityCont
-{       /* User activity cereal styling. */
+{       /* User activity general styling. */
     display: flex;
     flex-direction: column;
     width: 97%;
     height: 97%;
-    overflow: auto;
 }
 
 
@@ -133,4 +132,12 @@
         height: auto;
         margin-right: 5px;
     }
+}
+
+
+.userActivityPosts
+{
+    overflow: auto;
+    height: 88%;
+
 }

@@ -3,12 +3,15 @@ import "../profilePic.webp";
 import {AuthContext} from "../../context/authContext";
 import {useContext, useState} from "react";
 import {useNavigate} from "react-router-dom";
+import Posts from "../posts/Posts";
 
 
 
 const UserActivity = () => {
 
     const [error, setError] = useState(null);
+
+    const img1 = "https://t4.ftcdn.net/jpg/01/15/54/97/360_F_115549789_UxeJewo8VMYF9J1qzNdcZ4NvmuWECTxW.jpg";
 
 
 
@@ -42,9 +45,9 @@ const UserActivity = () => {
                 <span id="userInfoSpan1">
 
                     <img
-                        // src={profilePic}
-                        src="https://t4.ftcdn.net/jpg/01/15/54/97/360_F_115549789_UxeJewo8VMYF9J1qzNdcZ4NvmuWECTxW.jpg"
-                        alt=""
+                        // src={currentUser?.profilePic}
+                        src={img1}
+                        // alt=""
                     />
                     {currentUser?.username}
                 </span>
@@ -53,126 +56,11 @@ const UserActivity = () => {
                     Logout
                 </span>
             </div>
-            <div className="postsSectionCont">
-                <div className="postDetails">
-                    <h3>This is the posts section.</h3>
-                    <span>
-                        Picture post
-                    </span>
-                    <span>Description of the picture.</span>
-                    <span>Comments </span>
-                </div>
-                <div className="postButtons">Like, Dislike, Share</div>
+            <div className="userActivityPosts">
+                <Posts />
+                <Posts />
+                <Posts />
             </div>
-
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-
-            fffsafasf<br/>
-
-
-            fffsafasf<br/>            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-            fffsafasf<br/>
-
-            fffsafasf<br/>
-
 
 
         </div>
